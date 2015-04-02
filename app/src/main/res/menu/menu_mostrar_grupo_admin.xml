@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.uma.inftel.eyemandroid.activity.MostrarGrupoActivity">
+
+    <item android:id="@+id/btnEditarGrupo" android:title="@string/editar_grupo"
+        android:icon="@drawable/ic_action_edit"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/btnEliminarGrupo" android:title="@string/eliminar_grupo"
+        android:icon="@drawable/ic_action_delete_white"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+</menu>

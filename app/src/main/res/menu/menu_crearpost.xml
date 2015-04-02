@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.uma.inftel.eyemandroid.activity.CrearPostActivity">
+
+    <item android:id="@+id/BtnActualizar" android:title="Localizacion"
+        android:icon="@drawable/ic_my_location_white"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+   <item android:id="@+id/btnGuardar" android:title="Guardar"
+        android:icon="@drawable/ic_done_white_24dp"
+        android:orderInCategory="100" app:showAsAction="always"/>
+</menu>

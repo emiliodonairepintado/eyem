@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/logo"
+            android:layout_marginBottom="64dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="120dp"
+                android:text="Google +"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="logGoogle"
+                android:background="@drawable/common_signin_btn_icon_normal_dark"
+                android:contentDescription="Boton para logearse con google"/>
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="118dp"
+                android:text="Código QR"
+                android:id="@+id/button_scan"
+                android:layout_gravity="right"
+                android:background="@drawable/qr_code"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Boton para logearse con código QR"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/result"
+            android:editable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/texto"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

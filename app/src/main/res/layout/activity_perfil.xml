@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.Eyem.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            tools:context="es.uma.inftel.debares.activity.BarActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_material_light"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_material_light"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="224dp">
+
+                        <ImageView
+                            android:id="@+id/user_cover_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="224dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/google_default_cover_image" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="224dp"
+                            android:background="@drawable/gradient">
+
+                            <com.pkmmte.view.CircularImageView
+                                android:id="@+id/user_avatar"
+                                android:layout_width="128dp"
+                                android:layout_height="128dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="16dp"
+                                android:src="@drawable/google_default_profile_image" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/user_avatar"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <TextView
+                                    android:id="@+id/user_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/icons"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/user_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/icons"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listaPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:clickable="true">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+

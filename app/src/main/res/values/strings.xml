@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eyem</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="title_Activity_crear_post">Crear Post</string>
+    <string name="timeline">Timeline</string>
+    <string name="mi_eyem">Mi Eyem</string>
+    <string name="grupos">Grupos</string>
+    <string name="generar_qr">Generar QR</string>
+    <string name="desconectarse">Desconectarse</string>
+    <string name="options">Seleccione una opción</string>
+
+    <string name="nuevo_grupo">Nuevo Grupo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lista_usuarios_grupo">ListaUsuariosGrupoActivity</string>
+    <string name="eliminar_grupo">Eliminar Grupo</string>
+    <string name="salir_grupo">Salir del Grupo</string>
+    <string name="editar_grupo">Editar Grupo</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="connection_error">Error de conexión</string>
+    <string name="try_again">Reintentar</string>
+
+
+    <!-- Titles -->
+    <string name="scan">Scan</string>
+    <string name="encode">Generate</string>
+    <string name="decode">Decode</string>
+
+    <!-- Errors and messages -->
+    <string name="qrdroid_missing">Para leer un código QR es necesaria la version 3.5 de QR Droid</string>
+    <string name="from_market">Descargar de Google play</string>
+    <string name="cancel">Cancelar</string>
+    <string name="url_market">http://market.android.com/details?id=la.droid.qr</string>
+    <string name="enviar_qr">Enviar QR con:</string>
+    <string name="login_error">Credenciales incorrectas</string>
+    <string name="err_check_sdcard">Compruebe la tarjeta SD. No es posible almacenar la imagen.</string>
+    <string name="uploading_data">Subiendo datos</string>
+    <string name="post_no_creado">No se ha podido crear el post</string>
+    <string name="post_creado">Post creado</string>
+    <string name="creando_post">Creando post...</string>
+    <string name="comprobando_credenciales">Comprobando credenciales...</string>
+    <string name="post_no_replicado">No se ha podido replicar el post</string>
+    <string name="post_replicado">Post replicado</string>
+    <string name="grupo_no_creado">No se ha podido crear el grupo</string>
+    <string name="grupo_creado">Grupo creado</string>
+    <string name="creando_grupo">Creando grupo...</string>
+    <string name="title_activity_mostrar_grupo">Mostrar Grupo</string>
+    <string name="action_search">Buscar</string>
+    <string name="search_bar_hint">Buscar</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="perfil">Perfil</string>
+    <string name="busqueda">Búsqueda</string>
+    <string name="no_results">No hay resultados.</string>
+    <string name="title_activity_edit_group">EditGroupActivity</string>
+    <string name="title_activity_lista_usuarios_editar_grupo">ListaUsuariosEditarGrupoActivity
+    </string>
+    <string name="no_results_video">Realice una búsqueda</string>
+    <string name="title_activity_youtube_player">Reproductor</string>
+    <string name="title_activity_youtube_search">Buscar</string>
+    <string name="search">Buscar</string>
+    <string name="failed">Error al inicializar el reproductor de Youtube</string>
+    <string name="teclado">Teclado</string>
+    <string name="editando_grupo">Editando grupo...</string>
+    <string name="eliminando_grupo">Eliminando grupo...</string>
+    <string name="grupo_editado">Grupo editado</string>
+    <string name="grupo_no_editado">Grupo no editado</string>
+    <string name="grupo_abandonado">Grupo abandonado</string>
+    <string name="grupo_no_abandonado">Ha habido un error al abandonar el grupo</string>
+    <string name="grupo_eliminado">Grupo eliminado</string>
+    <string name="abandonando_grupo">Abandonando el grupo...</string>
+    <string name="msg_nombre_grupo_vacio">Debe especificar un nombre de grupo</string>
+    <string name="msg_usuarios_insuficientes">Agregue al menos un usuario al grupo</string>
+    <string name="post_eliminado">Post eliminado</string>
+    <string name="eliminando_post">Eliminando post...</string>
+
+</resources>

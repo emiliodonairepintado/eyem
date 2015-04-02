@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.uma.inftel.eyemandroid" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.LoginActivity" />
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.LoginActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activity.CrearPostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_Activity_crear_post"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CrearPostActivity" />
+
+        </activity>
+        <activity
+            android:name=".activity.CrearGrupoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/nuevo_grupo"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CrearGrupoActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ListaUsuariosGrupoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/nuevo_grupo"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ListaUsuariosGrupoActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PerfilActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/perfil"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PerfilActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.VerPostActivity"
+            android:label="Ver post"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.VerPostActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".activity.BuscarUsuarioActivity"
+            android:label="@string/busqueda"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.BuscarUsuarioActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".activity.TecladoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/teclado"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.TecladoActivity" />
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.MostrarGrupoActivity"
+            android:label="@string/title_activity_mostrar_grupo"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MostrarGrupoActivity" />
+        </activity>
+
+        <activity
+            android:name=".activity.CrearPostGruposActivity"
+            android:label="Crear post"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".activity.MainActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CrearPostGruposActivity" />
+
+        </activity>
+        <activity
+            android:name=".activity.EditGroupActivity"
+            android:label="@string/title_activity_edit_group" >
+        </activity>
+        <activity
+            android:name=".activity.ListaUsuariosEditarGrupoActivity"
+            android:label="@string/title_activity_lista_usuarios_editar_grupo" >
+        </activity>
+        <activity
+            android:name=".activity.YouTubeSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_youtube_search"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.YouTubeSearchActivity" />
+        </activity>
+        <activity
+            android:name=".activity.YouTubePlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_youtube_search"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.YouTubePlayerActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

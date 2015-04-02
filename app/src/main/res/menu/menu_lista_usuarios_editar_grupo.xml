@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.uma.inftel.eyemandroid.activity.ListaUsuariosEditarGrupoActivity">
+    <item android:id="@+id/btnEditarGrupo" android:title="siguiente"
+        android:icon="@android:drawable/ic_menu_send"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>
